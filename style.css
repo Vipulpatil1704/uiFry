@@ -1,0 +1,311 @@
+/*CSS variables*/
+:root {
+    --red-shade: #FF5555;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    overflow-x:hidden;
+}
+
+/*Navbar*/
+.navbar {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--white);
+}
+.navbar-brand{
+    color:var(--black)
+}
+.navBrand-name {
+    position: relative;
+    font-weight: 800;
+    margin: 0 0.25em;
+    vertical-align: middle;
+    /*As navbar-brand and nav-logo both are inline elements so vertical-align:middle property can be applied on them for align*/
+}
+
+/*Adding superscript TM to navbrand name*/
+.nav-superscript {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    font-size: 5px;
+}
+
+.home {
+    color: var(--red-shade) !important;
+    font-weight: 800;
+}
+
+.button {
+    color: var(--white) !important;
+    font-size: 1rem;
+    padding: 0.5em 3em !important;
+    background-color: var(--black);
+    margin:1em 0;
+}
+
+/*Main*/
+.star {
+    position: absolute;
+}
+
+.star-top-right {
+    right: 2%;
+    top: 15%;
+}
+
+.star-top-left {
+    left: 2%;
+    top: 25%;
+}
+
+main {
+    margin-left: 5%;
+    overflow-x:clip
+}
+.main-section{
+    position: relative;
+}
+.eclipse{
+    position: absolute;
+    height:10%;
+    width:10%;
+    z-index: -10;   
+}
+.eclipse-main-section{
+    top:-15%;
+    left:35%;
+}
+.phone-eclipse{
+   bottom:-3vw;
+   left:5vw;
+   height:60%;
+   width:80%;
+}
+.premium-eclipse-frame{
+    position: relative;
+}
+.premium-eclipse{
+    top:5%;
+    right:-40%;
+    height:80%;
+    width:80%;
+}
+.heading {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.watch-video {
+    text-decoration: none;
+    color: black;
+    margin: 0 3em;
+}
+.main-section-photo-frame{
+    position:relative;
+}
+.main-section-photo{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+.spiral-image{
+    position: relative;
+    left:100px;
+}
+.photo-3{
+    top:0;
+    left:-3vw;
+}
+.photo-2{
+    top:3vw;
+    left:3vw;
+}
+.photo-1{
+    top:5vw;
+    left:9vw;
+}
+/* .spiral {
+    height: 100%;
+    width: 100%;
+}
+/*Features*/
+.features-photo{
+    height: 100%;
+    width:100%;
+}
+.red-shade-heading{
+    color:var(--red-shade);
+}
+
+.black-shade-heading{
+    color:var(--black);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.white-shade-heading{
+    color:var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+ 
+}
+.white-para{
+    color:var(--white)
+}
+.list-heading{
+    color:var(--black);
+    font-weight: 700;
+}
+.feature-list{
+    margin-top:1.25em;
+}
+.features-icons{
+    color:var(--red-shade);
+    margin:0 1em;
+}
+/*Testimonial*/
+.testimonial-title{
+    text-align: center;
+}
+.group-photo{
+    width:25%;
+    margin:1em 0;
+}
+/*FAQ*/
+.faq{
+    margin-top:2em;
+}
+.faq-black h3{
+    color:var(--black);
+}
+.faq-black p{
+    color:var(--black);
+}
+.faq-red{
+    background-color: var(--red-shade);
+}
+.faq-red h3{
+    color:var(--white);
+}
+.faq-red p{
+    color:var(--white);
+}
+.faq .row{
+    border-radius:8px;
+    padding:1em;
+}
+/*Get started*/
+.get-started{
+    background-color: var(--black);
+    margin-top:3em;
+    position:relative;
+    z-index:0;
+}
+.getStarted-eclipse{
+    position: absolute;
+    top:0;
+    left:0;
+    right:40px;
+}
+.download-button{
+    position: relative;
+    background-color:var(--black);
+    color:var(--white);
+    z-index:100;
+}
+.spiral-left-getStarted{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.spiral-right-getStarted{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.eclipse-right-getStarted{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: -1;
+}
+.eclipse-left-getStarted{
+    position:absolute;
+    top:0;
+    left:-8%;
+    z-index: -1;
+}
+.star-left-getStarted{
+   position: absolute;
+   bottom:10px;
+   left:40%;
+}
+.star-right-getStarted{
+    position: absolute;
+    top:10px;
+    right:40%;
+ }
+
+/*footer*/
+.footer{
+    margin-top:3em;
+}
+.footer .row{
+     text-align: center;
+     display: flex;
+     align-items:top;
+     justify-content: center;
+}
+.horizontal-row{
+    width:50%;
+    margin:auto;
+}
+.contacts-div{
+    text-align: left;
+}
+.contacts-icon{
+    margin: 0;
+}
+.copyright{
+    text-align: center;
+    margin:2em;
+}
+/*Media Queries*/
+
+@media (max-width:660px) {
+    .navbar {
+        width: 95%
+    }
+
+    .star {
+        display: none;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    .spiral-image{
+        left:0px;
+    }
+    .contacts-div{
+        text-align: center;
+    }
+    .advantage{
+        margin-top:3em;
+    }
+}
+@media  (max-width:773px){
+    .contacts-div{
+        text-align: center;
+    }
+}
